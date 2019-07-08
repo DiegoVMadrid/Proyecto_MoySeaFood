@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Simple Sidebar - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Menu MOYSEAFOOD </div>
+      <div class="list-group list-group-flush">
+
+        <!-- Menu de opciones para los diferentes php -->
+      	<div class="list-group-item list-group-item-action bg-light">
+        	<a class="dropdown-item" href="#" class="dropdown-toggle" data-toggle="dropdown">Articulo<b class="caret"></b></a>
+        			<ul class ="dropdown-menu">
+        				<li><a class="dropdown-item" href="ListarArticulos.php">Listar articulos</a></li><div class="dropdown-divider"></div>
+        				<li><a class="dropdown-item" href="NuevoArticulo1.php">Nuevo articulo</a></li><div class="dropdown-divider"></div>
+				
+        					<a class="dropdown-item">Familias de articulos:</a>
+        						<ul class ="dropdown-submenu">
+        							<li><a class="dropdown-item" href="ListarFamilias.php">Listar familias</a></li><div class="dropdown-divider"></div>
+          							<li><a class="dropdown-item" href="NuevaFamilia1.php">Nueva familia de articulos</a></li>
+          						</ul>
+          						<div class="dropdown-divider"></div>
+          					<a class="dropdown-item">Tipos de articulos:</a>
+        						<ul class ="dropdown-submenu">
+        							<li><a class="dropdown-item" href="ListarTipo.php">Listar tipo de articulos</a></li><div class="dropdown-divider"></div>
+          							<li><a class="dropdown-item" href="NuevoTipo1.php">Nuevo tipo de articulo</a></li>
+   								</ul>
+				</ul>
+		</div>
+		<div class="list-group-item list-group-item-action bg-light">
+        	<a class="dropdown-item" href="#" class="dropdown-toggle" data-toggle="dropdown">Lotes<b class="caret"></b></a>
+        			<ul class ="dropdown-menu">
+        				<li><a class="dropdown-item" href="ListarLote.php">Listar lote de articulos</a></li><div class="dropdown-divider"></div>
+        				<li><a class="dropdown-item" href="NuevoLote1.php">Nuevo lote de articulos</a></li>
+     				</ul>   					
+    	</div> 				
+		<div class="divider"></div>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Pagina del contenido -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Menu</button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <center>
+          <img src="images/logomsf.png" height="160" width="400">
+        </center>
+        <p>Experiencia y excelencia en pulpo. Proveedor español e internacional de pulpo congelado cocido o crudo de la mayor calidad.</p>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
